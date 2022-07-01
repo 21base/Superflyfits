@@ -12,16 +12,11 @@ const theme = {
     dark_grey: "#757575",
     light_grey: "#BDBDBD",
   },
-  widths: {
-    small: "90%",
-    medium: "85%",
-    large: "80%",
-  },
   devices: {
     small: "600px",
     medium: "1200px",
     large: "1440px",
-  }
+  },
 };
 
 const Theme = ({ children }) => (

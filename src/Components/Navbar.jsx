@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { BsSearch } from "react-icons/bs";
 import { BsCart2 } from "react-icons/bs";
 import { FaUserCircle } from "react-icons/fa";
+import { GrClose } from "react-icons/gr";
 import { useState } from "react";
 import Dropdown from "./Dropdown";
 
@@ -71,20 +72,18 @@ const Badge = styled.div`
 
 const Navbar = () => {
   const [searchState, setSearchState] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(0)
+  const [showDropdown, setShowDropdown] = useState(0);
 
   const handleClick = (para) => {
-    setShowDropdown(para)
-  }
+    setShowDropdown(para);
+  };
 
-  console.log(showDropdown);
-  
   return (
     <>
       <Dropdown handleClick={handleClick} showDropdownState={showDropdown} />
       <Nav>
         <Menu>
-          <GiHamburgerMenu onClick={()=> setShowDropdown(1)} />
+          <GiHamburgerMenu onClick={() => setShowDropdown(1)} />
         </Menu>
         <Brand>
           <BrandName>superflyfits</BrandName>
@@ -92,13 +91,21 @@ const Navbar = () => {
         <SCP>
           <NavIcons searchActive={searchState} flexSearch={true}>
             {searchState && <Search placeholder="Pullovers" />}
-            <BsSearch
-              style={{ cursor: "pointer" }}
-              onClick={() => setSearchState(!searchState)}
-            />
+            {searchState === false && (
+              <BsSearch
+                style={{ cursor: "pointer" }}
+                onClick={() => setSearchState(true)}
+              />
+            )}
+            {searchState && (
+              <GrClose
+                style={{ cursor: "pointer" }}
+                onClick={() => setSearchState(false)}
+              />
+            )}
           </NavIcons>
           <NavIcons style={{ cursor: "pointer" }}>
-            <Badge>1</Badge>
+            <Badge>0</Badge>
             <BsCart2 />
           </NavIcons>
           <NavIcons style={{ cursor: "pointer" }}>
