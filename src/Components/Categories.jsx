@@ -6,6 +6,7 @@ import tShirt1 from "../Assets/tshirt-1.jpg";
 import tShirt2 from "../Assets/heroImg.jpg";
 import sweatShirt1 from "../Assets/sweatshirt-1.jpg";
 import sweatShirt2 from "../Assets/sweatshirt-2.jpg";
+import JandS from "../Assets/JandS.png";
 
 const CategoriesData = [
   {
@@ -98,9 +99,13 @@ const Tittle = styled.h1`
   font-size: 3rem;
   line-height: 1.2;
   color: ${(props) => props.pos === "right" && props.theme.colors.secondary};
+  width: ${(props) => props.lastCat === "JandS" && "350px"};
+  margin-bottom: ${(props) => props.lastCat === "JandS" && "20px"};
 `;
 
-const Paragraph = styled.p``;
+const Paragraph = styled.p`
+  width: ${(props) => props.lastCat === "JandS" && "450px"};
+`;
 
 const LinkHolder = styled.div`
   margin-left: ${(props) => props.pos === "left" && "30%"};
@@ -135,6 +140,7 @@ const ImageHolder = styled.div`
 const FirstImg = styled.img`
   max-width: 40%;
   margin-top: 50px;
+  max-width: ${(props) => props.lastCat === "JandS" && "80%"};
 `;
 
 const SecondImg = styled.img`
@@ -173,6 +179,24 @@ const Categories = () => {
           </Wrapper>
         );
       })}
+      <Wrapper>
+        <LeftDiv>
+          <Tittle lastCat={"JandS"}>joggers {"&"} shorts</Tittle>
+          <Paragraph lastCat={"JandS"}>
+            Joggers, shorts, joggers(top only), joggers(pants only), couple
+            wears and all women and men shorts for comfortability are available
+            in store. Place request or orders now.
+          </Paragraph>
+          <LinkHolder>
+            <ALink href="#">
+              see all <BsArrowRight />
+            </ALink>
+          </LinkHolder>
+        </LeftDiv>
+        <RightDiv>
+          <FirstImg lastCat={"JandS"} src={JandS} />
+        </RightDiv>
+      </Wrapper>
     </Container>
   );
 };
