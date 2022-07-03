@@ -86,7 +86,7 @@ const Navbar = () => {
           <GiHamburgerMenu onClick={() => setShowDropdown(1)} />
         </Menu>
         <Brand>
-          <BrandName>superflyfits</BrandName>
+          <BrandName>superfly</BrandName>
         </Brand>
         <SCP>
           <NavIcons searchActive={searchState} flexSearch={true}>

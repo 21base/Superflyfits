@@ -3,7 +3,7 @@ import Button from "./Button";
 import foldedTshirt from "../Assets/foldedTshirt.jpg";
 import Short from "../Assets/short.jpg";
 import hotelTshirt from "../Assets/hotelTshirt2.jpg";
-import superflyfits from "../Assets/superflyfits.png";
+import superfly from "../Assets/superfly.png";
 
 const Container = styled.div`
   width: 100vw;
@@ -44,8 +44,8 @@ const RightDiv = styled.div`
   text-align: center;
 `;
 
-const Superflyfits = styled.img`
-  max-width: 70%;
+const Superfly = styled.img`
+  max-width: 80%;
 `;
 
 const Goproducts = () => {
@@ -65,7 +65,7 @@ const Goproducts = () => {
             </ImageHolder>
           </ImageContainer>
           <BriefTalk>
-            Superflyfits is a brand with a store of various products and items
+            Superfly is a brand with a store of various products and items
             like pullovers, shorts, sweatshirts, joggers with the brand name on
             it. All wears is available for couples (identical pants). They are
             lot more available in store that are not mentioned here here dig in
@@ -76,7 +76,7 @@ const Goproducts = () => {
           <Button ml={"30px"} btnText={"go to products"} btnType={"full"} />
         </LeftDiv>
         <RightDiv>
-          <Superflyfits src={superflyfits} />
+          <Superfly src={superfly} />
         </RightDiv>
       </Wrapper>
     </Container>
