@@ -3,6 +3,7 @@ import Goproducts from "../Components/Goproducts";
 import Help from "../Components/Help";
 import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
+import Newsletter from "../Components/Newsletter";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Categories />
       <Goproducts />
       <Help />
+      <Newsletter />
     </>
   );
 };
