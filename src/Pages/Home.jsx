@@ -1,5 +1,6 @@
 import Categories from "../Components/Categories";
 import Goproducts from "../Components/Goproducts";
+import Help from "../Components/Help";
 import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
 
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <Categories />
       <Goproducts />
+      <Help />
     </>
   );
 };
