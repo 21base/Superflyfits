@@ -1,4 +1,5 @@
 import Categories from "../Components/Categories";
+import Footer from "../Components/Footer";
 import Goproducts from "../Components/Goproducts";
 import Help from "../Components/Help";
 import Hero from "../Components/Hero";
@@ -14,6 +15,7 @@ const Home = () => {
       <Goproducts />
       <Help />
       <Newsletter />
+      <Footer />
     </>
   );
 };
