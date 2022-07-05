@@ -15,7 +15,20 @@ const Wrapper = styled.div`
   background-position: center;
   display: flex;
   justify-content: space-between;
-  padding: 100px 45px 80px 45px;
+  padding: 130px 45px 80px 45px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-top: 40px solid ${(props) => props.theme.colors.white};
+    border-left: 700px solid transparent;
+    border-right: 700px solid transparent;
+  }
 `;
 
 const DivSec = styled.div`
