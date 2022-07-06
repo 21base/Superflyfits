@@ -4,8 +4,7 @@ import ProductImage from "../Assets/hotelTshirt.jpg";
 import Button from "./Button";
 
 const Container = styled.div`
-  position: relative;
-  width: 100vw;
+  width: 100%;
   padding: 40px 45px;
   display: flex;
   align-items: center;

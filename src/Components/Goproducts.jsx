@@ -6,7 +6,7 @@ import hotelTshirt from "../Assets/hotelTshirt2.jpg";
 import superfly from "../Assets/superfly.png";
 
 const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   padding: 40px 45px;
 `;
 

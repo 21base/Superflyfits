@@ -8,7 +8,7 @@ import { useState } from "react";
 import Dropdown from "./Dropdown";
 
 const Nav = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 50px;
   display: flex;
   align-items: center;

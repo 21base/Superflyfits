@@ -36,8 +36,7 @@ const CategoriesData = [
 ];
 
 const Container = styled.div`
-  width: 100vw;
-  position: relative;
+  width: 100%;
   padding: 40px 45px;
 `;
 

@@ -7,27 +7,30 @@ import { GrFacebookOption } from "react-icons/gr";
 import { BsTwitter } from "react-icons/bs";
 
 const Container = styled.div`
-  width: 100vw;
+  width: 100%;
 `;
 
 const Wrapper = styled.div`
+  width: 100%;
   background: ${(props) => props.theme.colors.dark};
   background-position: center;
   display: flex;
   justify-content: space-between;
   padding: 130px 45px 80px 45px;
   position: relative;
+  overflow-x: hidden;
 
   &:before {
     position: absolute;
-    content: "";
+    content: '';
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
     left: 0;
     top: 0;
-    bottom: 0;
-    right: 0;
     border-top: 40px solid ${(props) => props.theme.colors.white};
-    border-left: 700px solid transparent;
-    border-right: 700px solid transparent;
+    border-left: 675px solid transparent;
+    border-right: 675px solid transparent;
   }
 `;
 
