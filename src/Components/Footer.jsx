@@ -19,15 +19,17 @@ const Wrapper = styled.div`
   padding: 130px 45px 80px 45px;
   position: relative;
   overflow-x: hidden;
+  z-index: 1;
 
   &:before {
     position: absolute;
     content: '';
     width: 100%;
-    height: 100%;
+    height: 30%;
     box-sizing: border-box;
     left: 0;
     top: 0;
+    z-index: 0;
     border-top: 40px solid ${(props) => props.theme.colors.white};
     border-left: 675px solid transparent;
     border-right: 675px solid transparent;
