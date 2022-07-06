@@ -39,6 +39,7 @@ const SubmitBtn = styled.button`
   border-radius: 0 4px 4px 0;
   width: 100px;
   padding: 16px 0;
+  cursor: pointer;
 `;
 
 const Newsletter = () => {
