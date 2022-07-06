@@ -3,10 +3,12 @@ import { GrClose } from "react-icons/gr";
 import { useState } from "react";
 
 const Wrapper = styled.div`
-  width: 100vw;
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: ${(props) => props.theme.colors.lighter_secondary};
-  position: absolute;
   z-index: 99;
   padding: 40px 45px;
   transform: translateY(-110%);
