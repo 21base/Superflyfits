@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
-import Signin from "../Components/Signin";
-import Signup from "../Components/Signup";
+import Signin from "../Components/Login/Signin";
+import Signup from "../Components/Login/Signup";
 
 const Container = styled.div`
   width: 100%;

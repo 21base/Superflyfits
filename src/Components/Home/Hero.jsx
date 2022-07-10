@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import HeroImage from "../Assets/heroImg.jpg";
-import ProductImage from "../Assets/hotelTshirt.jpg";
-import Button from "./Button";
+import HeroImage from "../../Assets/heroImg.jpg";
+import ProductImage from "../../Assets/hotelTshirt.jpg";
+import Button from "../Button";
 
 const Container = styled.div`
   width: 100%;

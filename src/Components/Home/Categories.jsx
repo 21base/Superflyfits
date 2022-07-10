@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { BsArrowRight } from "react-icons/bs";
-import pullImg1 from "../Assets/pullover-1.jpg";
-import pullImg2 from "../Assets/pullover-2.jpg";
-import tShirt1 from "../Assets/tshirt-1.jpg";
-import tShirt2 from "../Assets/heroImg.jpg";
-import sweatShirt1 from "../Assets/sweatshirt-1.jpg";
-import sweatShirt2 from "../Assets/sweatshirt-2.jpg";
-import JandS from "../Assets/JandS.png";
+import pullImg1 from "../../Assets/pullover-1.jpg";
+import pullImg2 from "../../Assets/pullover-2.jpg";
+import tShirt1 from "../../Assets/tshirt-1.jpg";
+import tShirt2 from "../../Assets/heroImg.jpg";
+import sweatShirt1 from "../../Assets/sweatshirt-1.jpg";
+import sweatShirt2 from "../../Assets/sweatshirt-2.jpg";
+import JandS from "../../Assets/JandS.png";
 
 const CategoriesData = [
   {

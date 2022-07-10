@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import Button from "./Button";
-import foldedTshirt from "../Assets/foldedTshirt.jpg";
-import Short from "../Assets/short.jpg";
-import hotelTshirt from "../Assets/hotelTshirt2.jpg";
-import superfly from "../Assets/superfly.png";
+import Button from "../Button";
+import foldedTshirt from "../../Assets/foldedTshirt.jpg";
+import Short from "../../Assets/short.jpg";
+import hotelTshirt from "../../Assets/hotelTshirt2.jpg";
+import superfly from "../../Assets/superfly.png";
 
 const Container = styled.div`
   width: 100%;

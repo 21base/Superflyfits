@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import faq from "../Assets/faq.jpg";
-import Button from "./Button";
+import faq from "../../Assets/faq.jpg";
+import Button from "../Button";
 
 const Container = styled.div`
   width: 100%;
