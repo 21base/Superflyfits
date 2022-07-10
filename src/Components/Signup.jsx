@@ -7,8 +7,6 @@ import {
   Action,
   Actions,
   BottomAction,
-  ForgotPassword,
-  ForgotPassWordContainer,
   Form,
   Input,
   InputContainer,
@@ -25,7 +23,7 @@ import {
 } from "./FormComponents";
 import { useState } from "react";
 
-const Signin = ({ slideSignUp, slidingState }) => {
+const Signup = ({ slideSignIn, slidingState }) => {
   const [typeVal, setTypeVal] = useState("password");
 
   const showPassword = () => {
@@ -35,22 +33,21 @@ const Signin = ({ slideSignUp, slidingState }) => {
   const hidePassword = () => {
     setTypeVal("password");
   };
-
   return (
     <Form action="#" checkSlide={slidingState}>
       <Actions>
-        <Action type={"signIn"}>sign in</Action>
-        <Action onClick={() => slideSignUp("left", "slideLeft")}>
-          sign up
+        <Action onClick={() => slideSignIn("slideRight", "right")}>
+          sign in
         </Action>
+        <Action type={"signUp"}>sign up</Action>
       </Actions>
-      <Title>Sign in to Superfly</Title>
+      <Title>Sign up to Superfly</Title>
       <SignInOptions>
         <SignOption>
-          <FcGoogle /> Sign in with Google
+          <FcGoogle /> Sign up with Google
         </SignOption>
         <SignOption>
-          <BsFacebook /> Sign in with Facebook
+          <BsFacebook /> Sign up with Facebook
         </SignOption>
       </SignInOptions>
       <OrContainer>
@@ -76,15 +73,12 @@ const Signin = ({ slideSignUp, slidingState }) => {
         </InputHolder>
         {/* <Error>Incorrect password check and retry</Error> */}
       </InputContainer>
-      <SubmitBtn>sign in</SubmitBtn>
+      <SubmitBtn>sign up</SubmitBtn>
       <BottomAction>
-        <ForgotPassWordContainer>
-          <ForgotPassword href="#">Forgot password?</ForgotPassword>
-        </ForgotPassWordContainer>
         <AccContainer>
-          <AccText>Don't have an account?</AccText>
-          <AccLink onClick={() => slideSignUp("left", "slideLeft")}>
-            sign up
+          <AccText>Already have an account?</AccText>
+          <AccLink onClick={() => slideSignIn("slideRight", "right")}>
+            sign in
           </AccLink>
         </AccContainer>
       </BottomAction>
@@ -92,4 +86,4 @@ const Signin = ({ slideSignUp, slidingState }) => {
   );
 };
 
-export default Signin;
+export default Signup;
