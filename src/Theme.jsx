@@ -11,6 +11,7 @@ const theme = {
     lighter_secondary: "#D1C4E9",
     dark_grey: "#757575",
     light_grey: "#BDBDBD",
+    lighter_grey: "#E2E2E2",
   },
   devices: {
     small: "600px",
