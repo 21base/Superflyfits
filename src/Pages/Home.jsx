@@ -1,5 +1,5 @@
 import Categories from "../Components/Home/Categories";
-import Footer from "../Components/Home/Footer";
+import Footer from "../Components/Footer";
 import Goproducts from "../Components/Home/Goproducts";
 import Help from "../Components/Home/Help";
 import Hero from "../Components/Home/Hero";
