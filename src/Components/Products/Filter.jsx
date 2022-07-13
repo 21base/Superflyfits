@@ -6,7 +6,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  padding: 25px 0;
+  padding: 20px 0;
 `;
 
 const Title = styled.div`
@@ -28,7 +28,7 @@ const Category = styled.div`
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: ${props => props.justify && 'right'};
+  justify-content: ${(props) => props.justify && "right"};
 `;
 
 const CatTitle = styled.p`
@@ -40,9 +40,9 @@ const CatTitle = styled.p`
 const Categories = styled.select`
   text-transform: capitalize;
   font-weight: 500;
-  background: ${props => props.theme.colors.lighter_grey};
+  background: ${(props) => props.theme.colors.lighter_grey};
   width: 100px;
-  width: ${props => props.ex && '130px'};
+  width: ${(props) => props.ex && "130px"};
   padding: 10px 0;
   text-align: center;
   border-radius: 4px;
@@ -55,7 +55,7 @@ const CatOptions = styled.option`
   text-transform: capitalize;
 `;
 
-const Filter = () => {
+const Filter = ({ catFilter, priceFilter }) => {
   return (
     <Container>
       <Wrapper>
@@ -65,18 +65,18 @@ const Filter = () => {
         <FilterCat>
           <Category>
             <CatTitle>categories:</CatTitle>
-            <Categories>
+            <Categories onChange={(e) => catFilter(e.target.value)}>
               <CatOptions>all</CatOptions>
-              <CatOptions>pullover</CatOptions>
-              <CatOptions>sweatshirt</CatOptions>
-              <CatOptions>jogger</CatOptions>
-              <CatOptions>t-shirt</CatOptions>
-              <CatOptions>short</CatOptions>
+              <CatOptions>hoodies</CatOptions>
+              <CatOptions>sweatshirts</CatOptions>
+              <CatOptions>joggers</CatOptions>
+              <CatOptions>t-shirts</CatOptions>
+              <CatOptions>shorts</CatOptions>
             </Categories>
           </Category>
           <Category justify={true}>
             <CatTitle>price:</CatTitle>
-            <Categories ex={true}>
+            <Categories ex={true} onChange={(e) => priceFilter(e.target.value)}>
               <CatOptions>ascending</CatOptions>
               <CatOptions>descending</CatOptions>
             </Categories>
