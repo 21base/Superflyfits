@@ -178,7 +178,7 @@ const CartDetails = styled.div`
 
 const CartDetail = styled.p`
   text-transform: capitalize;
-  color: ${props => props.theme.colors.lighter_secondary};
+  color: ${(props) => props.theme.colors.lighter_secondary};
   font-weight: 500;
 `;
 
@@ -191,6 +191,7 @@ const CartView = styled.p`
 
 const TheProduct = () => {
   const [size, setSize] = useState("l");
+
   return (
     <Container>
       <IconHolder>
@@ -252,7 +253,11 @@ const TheProduct = () => {
             </ProductSold>
           </PriceHolder>
           <Actions>
-            <Button btnType={"full"} btnText={"add to cart"} />
+            <Button
+              btnType={"full"}
+              btnText={"add to cart"}
+              clicked={"clicked"}
+            />
             <Button btnType={"link"} btnText={"go to shop"} ml={"20px"} />
           </Actions>
         </RightDiv>
