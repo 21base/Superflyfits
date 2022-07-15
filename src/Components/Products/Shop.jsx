@@ -105,7 +105,7 @@ const tempData = [
   {
     id: 2100001,
     name: "suave hoodie",
-    price: 5680.2,
+    price: 5680.20,
     sold: 21,
     img: SuaveHoodie,
     cat: "hoodies",
@@ -113,7 +113,7 @@ const tempData = [
   {
     id: 2100002,
     name: "dope outfit short",
-    price: 3260.4,
+    price: 3260.40,
     sold: 32,
     img: RealShort,
     cat: "shorts",
@@ -121,7 +121,7 @@ const tempData = [
   {
     id: 2100003,
     name: "stripe hoodie",
-    price: 5980.2,
+    price: 5980.29,
     sold: 40,
     img: StripeHoodie,
     cat: "hoodies",
@@ -145,7 +145,7 @@ const tempData = [
   {
     id: 2100006,
     name: "fitness t-shirt",
-    price: 2150.5,
+    price: 2150.55,
     sold: 33,
     img: FitnessTshirt,
     cat: "t-shirts",
