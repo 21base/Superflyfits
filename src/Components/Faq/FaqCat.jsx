@@ -33,7 +33,7 @@ const Category = styled.div`
     content: "";
     width: 100%;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.8;
     background: ${(props) => props.theme.colors.dark};
   }
 
